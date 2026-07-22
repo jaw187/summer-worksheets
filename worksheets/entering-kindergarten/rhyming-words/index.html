@@ -134,9 +134,13 @@
         font-size: 13px;
       }
 
-      svg {
+      .picture {
         width: 1.05in;
         height: 1.05in;
+        display: block;
+        object-fit: contain;
+        border: 1px solid #c8d0d4;
+        border-radius: 6px;
       }
 
       .mouth-box {
@@ -228,14 +232,7 @@
       <section class="pairs" aria-label="Rhyming word practice">
         <div class="pair">
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Cat">
-              <circle cx="60" cy="62" r="35" fill="#f8c77e" stroke="#20272b" stroke-width="4"/>
-              <path d="M34 38 24 18 48 30M86 38l10-20-24 12" fill="#f8c77e" stroke="#20272b" stroke-width="4" stroke-linejoin="round"/>
-              <circle cx="47" cy="57" r="4" fill="#20272b"/>
-              <circle cx="73" cy="57" r="4" fill="#20272b"/>
-              <path d="M58 68h4l-2 4zM45 78c9 8 21 8 30 0" fill="none" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-              <path d="M35 67H16M36 75H18M85 67h19M84 75h18" stroke="#20272b" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/cat.png" alt="Cat.">
             <div>
               <p class="label">Read</p>
               <p class="word">cat</p>
@@ -243,11 +240,7 @@
             </div>
           </article>
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Hat">
-              <path d="M34 64c2-25 14-40 26-40s24 15 26 40" fill="#7fc6d6" stroke="#20272b" stroke-width="4"/>
-              <path d="M18 76c18-10 66-10 84 0 6 4 3 13-5 13H23c-8 0-11-9-5-13z" fill="#ffd56b" stroke="#20272b" stroke-width="4"/>
-              <path d="M39 64h42" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/hat.png" alt="Hat.">
             <div>
               <p class="label">Trace</p>
               <p class="word trace-word">hat</p>
@@ -258,14 +251,7 @@
 
         <div class="pair">
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Dog">
-              <circle cx="60" cy="62" r="34" fill="#c8915c" stroke="#20272b" stroke-width="4"/>
-              <path d="M31 43c-13 3-18 19-10 31 12-3 18-13 16-26M89 43c13 3 18 19 10 31-12-3-18-13-16-26" fill="#8c5b3d" stroke="#20272b" stroke-width="4"/>
-              <circle cx="48" cy="58" r="4" fill="#20272b"/>
-              <circle cx="72" cy="58" r="4" fill="#20272b"/>
-              <ellipse cx="60" cy="70" rx="8" ry="6" fill="#20272b"/>
-              <path d="M48 82c8 7 16 7 24 0" fill="none" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/dog.png" alt="Dog.">
             <div>
               <p class="label">Read</p>
               <p class="word">dog</p>
@@ -273,12 +259,7 @@
             </div>
           </article>
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Log">
-              <ellipse cx="35" cy="68" rx="18" ry="26" fill="#d9a36a" stroke="#20272b" stroke-width="4"/>
-              <rect x="35" y="42" width="56" height="52" rx="22" fill="#b87847" stroke="#20272b" stroke-width="4"/>
-              <ellipse cx="91" cy="68" rx="18" ry="26" fill="#d9a36a" stroke="#20272b" stroke-width="4"/>
-              <path d="M29 68c4-8 9-12 17-14M85 68c4-8 9-12 17-14" fill="none" stroke="#8c5b3d" stroke-width="3" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/log.png" alt="Log.">
             <div>
               <p class="label">Trace</p>
               <p class="word trace-word">log</p>
@@ -289,11 +270,7 @@
 
         <div class="pair">
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Fan">
-              <circle cx="60" cy="55" r="9" fill="#20272b"/>
-              <path d="M61 46c-5-20 16-34 31-19 4 16-13 28-31 19zM69 59c19-7 36 11 24 28-16 6-31-8-24-28zM51 59c-19-7-36 11-24 28 16 6 31-8 24-28z" fill="#9bd5ef" stroke="#20272b" stroke-width="4" stroke-linejoin="round"/>
-              <path d="M60 65v30M44 95h32" stroke="#20272b" stroke-width="5" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/fan.png" alt="Fan.">
             <div>
               <p class="label">Read</p>
               <p class="word">fan</p>
@@ -301,12 +278,7 @@
             </div>
           </article>
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Can">
-              <ellipse cx="60" cy="30" rx="28" ry="12" fill="#d7ecf1" stroke="#20272b" stroke-width="4"/>
-              <path d="M32 30v54c0 7 13 13 28 13s28-6 28-13V30" fill="#ef6f62" stroke="#20272b" stroke-width="4"/>
-              <ellipse cx="60" cy="84" rx="28" ry="13" fill="#d7ecf1" stroke="#20272b" stroke-width="4"/>
-              <path d="M43 58h34" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/can.png" alt="Can.">
             <div>
               <p class="label">Trace</p>
               <p class="word trace-word">can</p>
@@ -317,14 +289,7 @@
 
         <div class="pair">
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Bug">
-              <ellipse cx="60" cy="67" rx="27" ry="34" fill="#7fc66a" stroke="#20272b" stroke-width="4"/>
-              <circle cx="60" cy="34" r="18" fill="#7fc66a" stroke="#20272b" stroke-width="4"/>
-              <circle cx="53" cy="31" r="3" fill="#20272b"/>
-              <circle cx="67" cy="31" r="3" fill="#20272b"/>
-              <path d="M47 16 36 5M73 16 84 5M34 62H17M86 62h17M35 79H20M85 79h15" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-              <path d="M60 45v51" stroke="#20272b" stroke-width="3"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/bug.png" alt="Bug.">
             <div>
               <p class="label">Read</p>
               <p class="word">bug</p>
@@ -332,11 +297,7 @@
             </div>
           </article>
           <article class="card">
-            <svg viewBox="0 0 120 120" role="img" aria-label="Rug">
-              <rect x="20" y="34" width="80" height="52" rx="8" fill="#f3b85f" stroke="#20272b" stroke-width="4"/>
-              <path d="M20 45H8M20 60H8M20 75H8M100 45h12M100 60h12M100 75h12" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
-              <path d="M36 52h48M36 68h48" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
-            </svg>
+            <img class="picture" src="../../../assets/rhyming-words/rug.png" alt="Rug.">
             <div>
               <p class="label">Trace</p>
               <p class="word trace-word">rug</p>
