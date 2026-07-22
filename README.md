@@ -38,6 +38,7 @@ worksheets/<grade>/<topic>/      Printer-friendly worksheet documents
 ## Current Worksheets
 
 - [Entering Kindergarten: Fall Ready Practice](worksheets/entering-kindergarten/fall-ready/index.html)
+- [Entering Kindergarten: Rhyming Words](worksheets/entering-kindergarten/rhyming-words/index.html)
 
 ## Grade Guides
 

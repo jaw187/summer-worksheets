@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entering Kindergarten: Rhyming Words</title>
+    <style>
+      :root {
+        --ink: #20272b;
+        --line: #3f474b;
+        --paper: #ffffff;
+        --soft: #f4f8f6;
+        --accent: #277c78;
+        --trace: #9aa4a8;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #edf3f1;
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.35;
+      }
+
+      .page {
+        width: min(100%, 8.5in);
+        min-height: 11in;
+        margin: 0 auto;
+        padding: 0.42in;
+        background: var(--paper);
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.3in;
+        align-items: start;
+        border-bottom: 3px solid var(--ink);
+        padding-bottom: 0.16in;
+      }
+
+      h1 {
+        margin: 0 0 0.06in;
+        font-size: 28px;
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .subtitle {
+        margin: 0;
+        color: #425057;
+        font-size: 14px;
+      }
+
+      .meta {
+        display: grid;
+        gap: 0.08in;
+        min-width: 2.2in;
+        font-size: 14px;
+      }
+
+      .blank {
+        display: inline-block;
+        min-width: 1.32in;
+        height: 0.24in;
+        border-bottom: 2px solid var(--line);
+        vertical-align: bottom;
+      }
+
+      .directions {
+        margin: 0.16in 0;
+        padding: 0.1in 0.12in;
+        border: 2px solid var(--line);
+        background: var(--soft);
+        font-weight: 700;
+      }
+
+      .pairs {
+        display: grid;
+        gap: 0.13in;
+      }
+
+      .pair {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.12in;
+        break-inside: avoid;
+      }
+
+      .card {
+        display: grid;
+        grid-template-columns: 1.12in 1fr;
+        gap: 0.12in;
+        align-items: center;
+        min-height: 1.35in;
+        border: 2px solid var(--line);
+        padding: 0.1in;
+      }
+
+      .label {
+        margin: 0 0 0.04in;
+        color: #445057;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .word {
+        margin: 0;
+        font-size: 34px;
+        font-weight: 800;
+        letter-spacing: 0;
+      }
+
+      .trace-word {
+        color: var(--trace);
+        font-size: 36px;
+        font-weight: 800;
+        letter-spacing: 0.04in;
+        text-decoration-line: underline;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 0.12in;
+      }
+
+      .say {
+        margin: 0.08in 0 0;
+        color: #4d5a60;
+        font-size: 13px;
+      }
+
+      svg {
+        width: 1.05in;
+        height: 1.05in;
+      }
+
+      .mouth-box {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.12in;
+        margin-top: 0.14in;
+      }
+
+      .mini {
+        min-height: 0.72in;
+        border: 2px solid var(--line);
+        padding: 0.1in;
+      }
+
+      .mini p {
+        margin: 0 0 0.08in;
+        font-weight: 700;
+      }
+
+      .line {
+        height: 0.28in;
+        border-bottom: 2px solid var(--line);
+      }
+
+      .caregiver {
+        margin-top: 0.14in;
+        padding: 0.1in 0.12in;
+        border: 2px solid var(--line);
+        background: var(--soft);
+        font-size: 13px;
+      }
+
+      .caregiver strong {
+        display: block;
+        margin-bottom: 0.04in;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          padding: 0.32in;
+        }
+
+        @page {
+          size: letter;
+          margin: 0.25in;
+        }
+      }
+
+      @media (max-width: 760px) {
+        .page {
+          padding: 0.24in;
+        }
+
+        header,
+        .pair,
+        .mouth-box {
+          grid-template-columns: 1fr;
+        }
+
+        .meta {
+          min-width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <h1>Rhyming Words</h1>
+          <p class="subtitle">For a child entering Kindergarten. Say each pair aloud, listen for the ending sound, then trace the rhyming word.</p>
+        </div>
+        <div class="meta" aria-label="Student information">
+          <div>Name <span class="blank"></span></div>
+          <div>Date <span class="blank"></span></div>
+        </div>
+      </header>
+
+      <p class="directions">Read the word on the left. Look at the picture on the right. Trace the word that rhymes.</p>
+
+      <section class="pairs" aria-label="Rhyming word practice">
+        <div class="pair">
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Cat">
+              <circle cx="60" cy="62" r="35" fill="#f8c77e" stroke="#20272b" stroke-width="4"/>
+              <path d="M34 38 24 18 48 30M86 38l10-20-24 12" fill="#f8c77e" stroke="#20272b" stroke-width="4" stroke-linejoin="round"/>
+              <circle cx="47" cy="57" r="4" fill="#20272b"/>
+              <circle cx="73" cy="57" r="4" fill="#20272b"/>
+              <path d="M58 68h4l-2 4zM45 78c9 8 21 8 30 0" fill="none" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+              <path d="M35 67H16M36 75H18M85 67h19M84 75h18" stroke="#20272b" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Read</p>
+              <p class="word">cat</p>
+              <p class="say">Say: cat</p>
+            </div>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Hat">
+              <path d="M34 64c2-25 14-40 26-40s24 15 26 40" fill="#7fc6d6" stroke="#20272b" stroke-width="4"/>
+              <path d="M18 76c18-10 66-10 84 0 6 4 3 13-5 13H23c-8 0-11-9-5-13z" fill="#ffd56b" stroke="#20272b" stroke-width="4"/>
+              <path d="M39 64h42" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Trace</p>
+              <p class="word trace-word">hat</p>
+              <p class="say">Cat rhymes with hat.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="pair">
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Dog">
+              <circle cx="60" cy="62" r="34" fill="#c8915c" stroke="#20272b" stroke-width="4"/>
+              <path d="M31 43c-13 3-18 19-10 31 12-3 18-13 16-26M89 43c13 3 18 19 10 31-12-3-18-13-16-26" fill="#8c5b3d" stroke="#20272b" stroke-width="4"/>
+              <circle cx="48" cy="58" r="4" fill="#20272b"/>
+              <circle cx="72" cy="58" r="4" fill="#20272b"/>
+              <ellipse cx="60" cy="70" rx="8" ry="6" fill="#20272b"/>
+              <path d="M48 82c8 7 16 7 24 0" fill="none" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Read</p>
+              <p class="word">dog</p>
+              <p class="say">Say: dog</p>
+            </div>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Log">
+              <ellipse cx="35" cy="68" rx="18" ry="26" fill="#d9a36a" stroke="#20272b" stroke-width="4"/>
+              <rect x="35" y="42" width="56" height="52" rx="22" fill="#b87847" stroke="#20272b" stroke-width="4"/>
+              <ellipse cx="91" cy="68" rx="18" ry="26" fill="#d9a36a" stroke="#20272b" stroke-width="4"/>
+              <path d="M29 68c4-8 9-12 17-14M85 68c4-8 9-12 17-14" fill="none" stroke="#8c5b3d" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Trace</p>
+              <p class="word trace-word">log</p>
+              <p class="say">Dog rhymes with log.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="pair">
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Fan">
+              <circle cx="60" cy="55" r="9" fill="#20272b"/>
+              <path d="M61 46c-5-20 16-34 31-19 4 16-13 28-31 19zM69 59c19-7 36 11 24 28-16 6-31-8-24-28zM51 59c-19-7-36 11-24 28 16 6 31-8 24-28z" fill="#9bd5ef" stroke="#20272b" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M60 65v30M44 95h32" stroke="#20272b" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Read</p>
+              <p class="word">fan</p>
+              <p class="say">Say: fan</p>
+            </div>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Can">
+              <ellipse cx="60" cy="30" rx="28" ry="12" fill="#d7ecf1" stroke="#20272b" stroke-width="4"/>
+              <path d="M32 30v54c0 7 13 13 28 13s28-6 28-13V30" fill="#ef6f62" stroke="#20272b" stroke-width="4"/>
+              <ellipse cx="60" cy="84" rx="28" ry="13" fill="#d7ecf1" stroke="#20272b" stroke-width="4"/>
+              <path d="M43 58h34" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Trace</p>
+              <p class="word trace-word">can</p>
+              <p class="say">Fan rhymes with can.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="pair">
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Bug">
+              <ellipse cx="60" cy="67" rx="27" ry="34" fill="#7fc66a" stroke="#20272b" stroke-width="4"/>
+              <circle cx="60" cy="34" r="18" fill="#7fc66a" stroke="#20272b" stroke-width="4"/>
+              <circle cx="53" cy="31" r="3" fill="#20272b"/>
+              <circle cx="67" cy="31" r="3" fill="#20272b"/>
+              <path d="M47 16 36 5M73 16 84 5M34 62H17M86 62h17M35 79H20M85 79h15" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+              <path d="M60 45v51" stroke="#20272b" stroke-width="3"/>
+            </svg>
+            <div>
+              <p class="label">Read</p>
+              <p class="word">bug</p>
+              <p class="say">Say: bug</p>
+            </div>
+          </article>
+          <article class="card">
+            <svg viewBox="0 0 120 120" role="img" aria-label="Rug">
+              <rect x="20" y="34" width="80" height="52" rx="8" fill="#f3b85f" stroke="#20272b" stroke-width="4"/>
+              <path d="M20 45H8M20 60H8M20 75H8M100 45h12M100 60h12M100 75h12" stroke="#20272b" stroke-width="4" stroke-linecap="round"/>
+              <path d="M36 52h48M36 68h48" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+            </svg>
+            <div>
+              <p class="label">Trace</p>
+              <p class="word trace-word">rug</p>
+              <p class="say">Bug rhymes with rug.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="mouth-box" aria-label="Oral practice">
+        <div class="mini">
+          <p>Say one more word that rhymes with cat.</p>
+          <div class="line"></div>
+        </div>
+        <div class="mini">
+          <p>Circle your favorite rhyming pair.</p>
+          <div class="line"></div>
+        </div>
+      </section>
+
+      <aside class="caregiver">
+        <strong>Caregiver note</strong>
+        Rhyming builds phonological awareness, a key early reading skill. Read each word aloud, stretch the ending sound, and let the child trace at their own pace.
+      </aside>
+    </main>
+  </body>
+</html>
