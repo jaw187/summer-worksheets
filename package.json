@@ -1,0 +1,18 @@
+{
+  "name": "summer-worksheets",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Printer-friendly summer worksheets and grade-readiness guides for elementary school children.",
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "check": "node --check server.mjs"
+  },
+  "keywords": [
+    "worksheets",
+    "elementary",
+    "summer-learning",
+    "printable"
+  ],
+  "license": "MIT"
+}

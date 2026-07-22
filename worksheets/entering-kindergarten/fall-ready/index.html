@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Entering Kindergarten: Fall Ready Practice</title>
+    <style>
+      :root {
+        --ink: #1f2528;
+        --line: #42484c;
+        --soft: #f7faf9;
+        --accent: #d94f42;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        background: #eef4f2;
+        color: var(--ink);
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        line-height: 1.35;
+      }
+
+      .page {
+        width: min(100%, 8.5in);
+        min-height: 11in;
+        margin: 0 auto;
+        padding: 0.45in;
+        background: #fff;
+      }
+
+      header {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        gap: 0.35in;
+        align-items: start;
+        border-bottom: 3px solid var(--ink);
+        padding-bottom: 0.18in;
+      }
+
+      h1 {
+        margin: 0 0 0.06in;
+        font-size: 27px;
+        line-height: 1.05;
+        letter-spacing: 0;
+      }
+
+      .meta {
+        display: grid;
+        gap: 0.08in;
+        min-width: 2.25in;
+        font-size: 14px;
+      }
+
+      .blank {
+        display: inline-block;
+        border-bottom: 2px solid var(--line);
+        min-width: 1.35in;
+        height: 0.24in;
+        vertical-align: bottom;
+      }
+
+      .note {
+        margin: 0.12in 0 0;
+        color: #3c474c;
+        font-size: 14px;
+      }
+
+      .hero {
+        width: 100%;
+        max-height: 1.85in;
+        object-fit: contain;
+        margin: 0.18in 0 0.12in;
+        border: 2px solid var(--line);
+      }
+
+      section {
+        break-inside: avoid;
+        margin-top: 0.16in;
+      }
+
+      h2 {
+        display: inline-block;
+        margin: 0 0 0.08in;
+        padding: 0.04in 0.08in;
+        background: var(--soft);
+        border-left: 5px solid var(--accent);
+        font-size: 18px;
+        letter-spacing: 0;
+      }
+
+      .practice-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.14in;
+      }
+
+      .box {
+        border: 2px solid var(--line);
+        padding: 0.12in;
+        min-height: 1.38in;
+      }
+
+      .prompt {
+        margin: 0 0 0.1in;
+        font-weight: 700;
+      }
+
+      .letter-row,
+      .number-row,
+      .shape-row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.09in;
+        align-items: center;
+      }
+
+      .tile {
+        display: grid;
+        place-items: center;
+        width: 0.48in;
+        height: 0.48in;
+        border: 2px solid var(--line);
+        font-size: 24px;
+        font-weight: 700;
+      }
+
+      .word-tile {
+        width: 0.74in;
+        font-size: 15px;
+      }
+
+      .trace {
+        color: #9aa1a5;
+        border-style: dashed;
+      }
+
+      .answer-line {
+        border-bottom: 2px solid var(--line);
+        height: 0.32in;
+        margin-top: 0.06in;
+      }
+
+      .draw-box {
+        height: 1.4in;
+        border: 2px dashed var(--line);
+        margin-top: 0.08in;
+      }
+
+      .checklist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.05in 0.18in;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .checklist li::before {
+        content: "□";
+        margin-right: 0.07in;
+        font-size: 18px;
+      }
+
+      .caregiver {
+        margin-top: 0.18in;
+        padding: 0.12in;
+        border: 2px solid var(--line);
+        background: var(--soft);
+        font-size: 13px;
+      }
+
+      .caregiver strong {
+        display: block;
+        margin-bottom: 0.04in;
+      }
+
+      @media print {
+        body {
+          background: #fff;
+        }
+
+        .page {
+          width: auto;
+          min-height: auto;
+          margin: 0;
+          padding: 0.35in;
+        }
+
+        @page {
+          size: letter;
+          margin: 0.25in;
+        }
+      }
+
+      @media (max-width: 720px) {
+        .page {
+          padding: 0.25in;
+        }
+
+        header,
+        .practice-grid,
+        .checklist {
+          grid-template-columns: 1fr;
+        }
+
+        .meta {
+          min-width: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="page">
+      <header>
+        <div>
+          <h1>Fall Ready Practice</h1>
+          <p class="note">For a child entering Kindergarten. Work slowly, talk together, and stop while it still feels fun.</p>
+        </div>
+        <div class="meta" aria-label="Student information">
+          <div>Name <span class="blank"></span></div>
+          <div>Date <span class="blank"></span></div>
+        </div>
+      </header>
+
+      <img class="hero" src="../../../assets/summer-counting.svg" alt="Summer picture with sun, flowers, clouds, and beach balls.">
+
+      <section class="practice-grid" aria-label="Worksheet activities">
+        <div class="box">
+          <h2>Letters</h2>
+          <p class="prompt">Circle the letters in your name.</p>
+          <div class="letter-row" aria-label="Letters to choose from">
+            <span class="tile">A</span>
+            <span class="tile">M</span>
+            <span class="tile">S</span>
+            <span class="tile">T</span>
+            <span class="tile">L</span>
+            <span class="tile">E</span>
+            <span class="tile">R</span>
+            <span class="tile">N</span>
+          </div>
+          <p class="prompt" style="margin-top: 0.14in;">Trace your first letter.</p>
+          <div class="letter-row">
+            <span class="tile trace">A</span>
+            <span class="tile trace">A</span>
+            <span class="tile trace">A</span>
+            <span class="tile"></span>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Counting</h2>
+          <p class="prompt">Count the picture. Write the number.</p>
+          <div>Flowers <span class="blank"></span></div>
+          <div>Beach balls <span class="blank"></span></div>
+          <div>Clouds <span class="blank"></span></div>
+          <p class="prompt" style="margin-top: 0.12in;">Trace the numbers.</p>
+          <div class="number-row">
+            <span class="tile trace">1</span>
+            <span class="tile trace">2</span>
+            <span class="tile trace">3</span>
+            <span class="tile trace">4</span>
+            <span class="tile trace">5</span>
+          </div>
+        </div>
+
+        <div class="box">
+          <h2>Sounds</h2>
+          <p class="prompt">Say each word. Color the ones that start with /s/.</p>
+          <div class="shape-row">
+            <span class="tile word-tile">sun</span>
+            <span class="tile word-tile">bug</span>
+            <span class="tile word-tile">sock</span>
+            <span class="tile word-tile">cup</span>
+          </div>
+          <p class="prompt" style="margin-top: 0.12in;">Tell an adult one word that rhymes with sun.</p>
+          <div class="answer-line"></div>
+        </div>
+
+        <div class="box">
+          <h2>Shapes</h2>
+          <p class="prompt">Draw one circle, one square, and one triangle.</p>
+          <div class="draw-box" aria-label="Drawing area"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Ready for School</h2>
+        <ul class="checklist">
+          <li>I can say my first and last name.</li>
+          <li>I can count five things.</li>
+          <li>I can wait for a turn.</li>
+          <li>I can clean up my space.</li>
+          <li>I can ask for help.</li>
+          <li>I can listen to a short story.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Draw and Tell</h2>
+        <p class="prompt">Draw something you want to do at school. Tell an adult about your picture.</p>
+        <div class="draw-box" aria-label="Large drawing area"></div>
+        <div class="answer-line"></div>
+      </section>
+
+      <aside class="caregiver">
+        <strong>Caregiver note</strong>
+        This page practices Kindergarten readiness: name awareness, letter recognition, counting, beginning sounds, shapes, fine motor control, and classroom independence. Reading the prompts aloud is expected.
+      </aside>
+    </main>
+  </body>
+</html>

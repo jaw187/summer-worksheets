@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img" aria-labelledby="title desc">
+  <title id="title">Summer counting picture</title>
+  <desc id="desc">A bright summer scene with a sun, clouds, flowers, and beach balls for children to count.</desc>
+  <rect width="640" height="220" fill="#f6fbff"/>
+  <circle cx="78" cy="62" r="38" fill="#ffd15c" stroke="#222" stroke-width="4"/>
+  <g stroke="#222" stroke-width="4" stroke-linecap="round">
+    <line x1="78" y1="8" x2="78" y2="25"/>
+    <line x1="78" y1="99" x2="78" y2="116"/>
+    <line x1="24" y1="62" x2="41" y2="62"/>
+    <line x1="115" y1="62" x2="132" y2="62"/>
+    <line x1="40" y1="24" x2="52" y2="36"/>
+    <line x1="104" y1="88" x2="116" y2="100"/>
+    <line x1="116" y1="24" x2="104" y2="36"/>
+    <line x1="52" y1="88" x2="40" y2="100"/>
+  </g>
+  <g fill="#fff" stroke="#222" stroke-width="4">
+    <path d="M203 75c8-20 37-20 45-1 16-10 39 2 39 22H170c0-16 16-27 33-21z"/>
+    <path d="M416 52c9-23 42-22 52-1 18-11 44 2 44 25H379c0-18 18-30 37-24z"/>
+  </g>
+  <rect y="160" width="640" height="60" fill="#dff0c2"/>
+  <g stroke="#222" stroke-width="3" stroke-linecap="round">
+    <g transform="translate(154 135)">
+      <line x1="0" y1="58" x2="0" y2="18"/>
+      <circle cx="-12" cy="12" r="13" fill="#ef6f6c"/>
+      <circle cx="12" cy="12" r="13" fill="#ef6f6c"/>
+      <circle cx="0" cy="0" r="13" fill="#ef6f6c"/>
+      <circle cx="0" cy="12" r="7" fill="#ffd15c"/>
+    </g>
+    <g transform="translate(236 142)">
+      <line x1="0" y1="51" x2="0" y2="16"/>
+      <circle cx="-11" cy="10" r="12" fill="#7db6ff"/>
+      <circle cx="11" cy="10" r="12" fill="#7db6ff"/>
+      <circle cx="0" cy="0" r="12" fill="#7db6ff"/>
+      <circle cx="0" cy="10" r="6" fill="#ffd15c"/>
+    </g>
+    <g transform="translate(318 136)">
+      <line x1="0" y1="57" x2="0" y2="18"/>
+      <circle cx="-12" cy="12" r="13" fill="#f48bd2"/>
+      <circle cx="12" cy="12" r="13" fill="#f48bd2"/>
+      <circle cx="0" cy="0" r="13" fill="#f48bd2"/>
+      <circle cx="0" cy="12" r="7" fill="#ffd15c"/>
+    </g>
+    <g transform="translate(400 143)">
+      <line x1="0" y1="50" x2="0" y2="16"/>
+      <circle cx="-11" cy="10" r="12" fill="#8ed081"/>
+      <circle cx="11" cy="10" r="12" fill="#8ed081"/>
+      <circle cx="0" cy="0" r="12" fill="#8ed081"/>
+      <circle cx="0" cy="10" r="6" fill="#ffd15c"/>
+    </g>
+  </g>
+  <g stroke="#222" stroke-width="4">
+    <circle cx="504" cy="157" r="27" fill="#fff"/>
+    <path d="M477 157h54" fill="none"/>
+    <path d="M504 130c18 20 18 34 0 54" fill="none"/>
+    <path d="M504 130c-18 20-18 34 0 54" fill="none"/>
+    <path d="M477 157a27 27 0 0 1 54 0" fill="#ff7a59"/>
+    <path d="M477 157a27 27 0 0 0 54 0" fill="#6ac4ff"/>
+    <circle cx="574" cy="163" r="23" fill="#fff"/>
+    <path d="M551 163h46" fill="none"/>
+    <path d="M574 140c15 17 15 29 0 46" fill="none"/>
+    <path d="M574 140c-15 17-15 29 0 46" fill="none"/>
+    <path d="M551 163a23 23 0 0 1 46 0" fill="#ffd15c"/>
+    <path d="M551 163a23 23 0 0 0 46 0" fill="#9f8cff"/>
+  </g>
+</svg>
